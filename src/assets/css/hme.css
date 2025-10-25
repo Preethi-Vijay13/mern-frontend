@@ -1,0 +1,298 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header */
+header {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #FFC107;
+}
+
+/* Button Styling */
+header .btn {
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    margin-left: 15px;
+}
+
+/* Style for "Book an Appointment" Button */
+header .btn-outline-light {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+/* Hover effect for "Book an Appointment" button */
+header .btn-outline-light:hover {
+    background-color: #FFC107;
+    border-color: #FFC107;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../images/dental-hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background: #FFC107;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.hero .btn:hover,
+.hero .btn:focus {
+    background: #e0a800;
+    color: #fff;
+}
+
+/* About Us Section */
+.about {
+    padding: 50px 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.8;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 50px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.reasons-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.reason-item {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 22%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reason-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.reason-item p {
+    font-size: 16px;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service-item {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+}
+
+.service-image {
+    width: 100%;
+    height: 200px; /* or any fixed height you prefer */
+    object-fit: cover; /* Ensures images fill the space without distorting */
+    border-radius: 8px; /* Optional: to add rounded corners */
+}
+
+/* Ensure img-fluid doesn't affect the image size */
+.service-item img {
+    width: 100%; /* Make sure the image fills its container */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure it maintains aspect ratio */
+    border-radius: 8px; /* Optional rounded corners */
+}
+
+  
+
+/* Working Hours Section */
+.working-hours {
+    padding: 50px 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.working-hours h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.working-hours p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.working-hours ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 20px;
+    max-width: 400px;
+    text-align: left;
+}
+
+.working-hours ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.working-hours ul li strong {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reason-item,
+    .service-item {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .reasons-list,
+    .service-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
